@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Pizza in</title>
-    <link rel="stylesheet" href="style.css">
+    
 
     <h1><b>Pizza in</b></h1>
 </head>
@@ -28,10 +29,33 @@
         <div class="jumbotron" id="landing-content">
             <h1 class="page-header">Pizza in!</h1>
             <h2 id="landing-tagline">We do not only have pizza.We have the Best!</h2>
-            <p>Free delivery for the first five Everyday</p>
+            <p><i>Free Delivery for the First Five Everyday</i></p>
             <button type="btn" class="btn btn-primary" id="pickup-btn">Pickup</button>
             <button type="btn" class="btn btn-danger" id="delivery-btn">Delivery</button>
             <div class="form-group" id="address">
+                <!-- Adress form -->
+                <h3>Delivery Address</h3>
+                <form id="address-form">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <label for="street-address">Full Name</label><input required type="text" class="form-control" id="street-add">
+                        </div>
+                        <div class="col-xs-3">
+                            <label for="city-name">Phone Number</label><input required type="text" class="form-control" id="city-add">
+                        </div>
+                        <div class="col-xs-2">
+                            <label for="state-name">Delivery Point</label>
+                            <input type="text" class="form-control delivery-address" id="state-select" required>
+                        </div>
+                        <div class="col-xs-2">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="order-proceed-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
                 
 <body>
 </body>
