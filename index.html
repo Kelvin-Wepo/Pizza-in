@@ -31,7 +31,7 @@
             <h2 id="landing-tagline">We do not only have pizza.We have the Best!</h2>
             <p><i>Free Delivery for the First Five Everyday</i></p>
             <button type="btn" class="btn btn-primary" id="pickup-btn">Pickup</button>
-            <button type="btn" class="btn btn-danger" id="delivery-btn">Delivery</button>
+            <button type="btn" class="btn btn-success" id="delivery-btn">Delivery</button>
             <div class="form-group" id="address">
                 <!-- Adress form -->
                 <h3>Delivery Address</h3>
@@ -53,6 +53,166 @@
                     <button type="submit" class="btn btn-primary" id="order-proceed-btn">Submit</button>
                 </form>
             </div>
+        </div>
+    </div>
+    <!-- order section -->
+    <div class="container">
+        <main>
+
+            <div class="" id="order-content">
+                <h1 class="" id="header">Order Options</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="section-card visible first">
+                            <header>
+                                <h1>Size!</h1>
+                            </header>
+                            <p>
+                                Small
+                                <input type="radio" name="size" id="Personal size" data-price="600">
+                            </p>
+                            <p>
+                                Medium
+                                <input type="radio" name="size" id="Medium size" data-price="1000">
+                            </p>
+                            <p>
+                                Large
+                                <input type="radio" name="size" id="Large size" data-price="1400">
+                            </p>
+                            <p>
+                                Extra Large
+                                <input type="radio" name="size" id="Extra large" data-price="1600">
+                            </p>
+                            <button class="back">Back</button>
+                            <button class="submit">Next</button>
+                        </div>
+
+                        <div class="section-card">
+                            <header>
+                                <h1>Meaty!</h1>
+                                <figcaption> The first meat item is complimentary. All additional meat items cost KSh 50 each.</figcaption>
+                            </header>
+                            <p>
+                                Pepperoni
+                                <input type="checkbox" name="meat" id="Pepperoni">
+                            </p>
+                            <p>
+                                Sausage
+                                <input type="checkbox" name="meat" id="Sausage" data-price="50">
+                            </p>
+                            <p>
+                                Canadian Bacon
+                                <input type="checkbox" name="meat" id="Canadian Bacon" data-price="50">
+                            </p>
+                            <p>
+                                Ground Beef
+                                <input type="checkbox" name="meat" id="Ground Beef" data-price="50">
+                            </p>
+                            <p>
+                                Anchovy
+                                <input type="checkbox" name="meat" id="Anchovy" data-price="50">
+                            </p>
+                            <p>
+                                Chicken
+                                <input type="checkbox" name="meat" id="Chicken" data-price="50">
+                            </p>
+                            <button class="back">Back</button>
+                            <button class="submit">Next</button>
+                        </div>
+
+                        <div class="section-card">
+                            <header>
+                                <h1>Cheesy!</h1>
+                            </header>
+                            <p>
+                                Regular
+                                <input type="radio" name="cheese" id="Regular cheese" data-price="10">
+                            </p>
+                            <p>
+                                No cheese
+                                <input type="radio" name="cheese" id="No cheese" data-price="20">
+                            </p>
+                            <p>
+                                Extra Cheese
+                                <input type="radio" name="cheese" id="Extra Cheese" data-price="30">
+                            </p>
+                            <button class="back">
+                       Back
+                   </button>
+                            <button class="submit">
+                       Next
+                   </button>
+                        </div>
+
+                        <div class="section-card">
+                            <header>
+                                <h1>Crusty!</h1>
+                            </header>
+                            <p>Plain Crust<input type="radio" name="crust" id="Plain Crust"></p>
+                            <p>Garlic Butter Crust<input type="radio" name="crust" id="Garlic Butter Crust"></p>
+                            <p>Cheese Stuffed Crust<input data-price="30" type="radio" name="crust" id="Cheese Stuffed Crust"></p>
+                            <p>Spicy Crust<input type="radio" name="crust" id="Spicy Crust"></p>
+                            <p>House Special Crust<input type="radio" name="crust" id="House Special Crust"></p>
+                            <button class="back">Back</button>
+                            <button class="submit">Next</button>
+                        </div>
+                        <div class="section-card">
+                            <header>
+                                <h1>Saucy!</h1>
+                            </header>
+                            <p>Marinara sauce<input type="radio" name="sauce" id="Marinara sauce"></p>
+                            <p>White sauce<input type="radio" name="sauce" id="White sauce"></p>
+                            <p>Barbeque sauce<input type="radio" name="sauce" id="Barbeque sauce"></p>
+                            <p>No Sauce<input type="radio" name="sauce" id="No Sauce"></p>
+                            <button class="back">Back</button>
+                            <button class="submit">Next</button>
+                        </div>
+                        <div class="section-card">
+                            <header>
+                                <h1>Vegetable</h1>
+                                The first type of veggie is complimentary. All additional veggie items cost KSh 20 each.
+                            </header>
+
+                            <p>Tomatoes<input type="checkbox" name="veggies" id="Tomatoes"></p>
+                            <p>Onions<input type="checkbox" name="veggies" id="Onions" data-price="20"></p>
+                            <p>Olives<input type="checkbox" name="veggies" id="Olives" data-price="20"></p>
+                            <p>Green Peppers<input type="checkbox" name="veggies" id="Green Peppers" data-price="20"></p>
+                            <p>Mushrooms<input type="checkbox" name="veggies" id="Mushrooms" data-price="20"></p>
+                            <p>Pineapple <input type="checkbox" name="veggies" id="Pineapple" data-price="20"></p>
+                            <p>Spinach <input type="checkbox" name="veggies" id="Spinach" data-price="20"></p>
+                            <p>Jalapeno <input type="checkbox" name="veggies" id="Jalapeno" data-price="20"></p>
+                            <button class="back">Back</button>
+                            <button class="submit">Next</button>
+                        </div>
+
+                        <div class="section-card last">
+                            <header>
+                                <h1>Delivery</h1>
+                                Delivery charges of KSh 100 apply.
+                            </header>
+                            <p>Pickup <input type="radio" name="delivery" id=""></p>
+                            <p>Delivery <input type="radio" name="delivery" id="" data-price="100"></p>
+                            <button class="back">Back</button>
+                            <button class="submit">Next</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="tally">
+                            <h1>Your Order</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 id="dell"><span id="delivery-option"></span></h3>
+        </main>
+    </div>
+
+    <div class="" id="price-content">
+        <div id="order-details">
+            <ul id="pizza-details"></ul>
+            <p><a id="default-pizza-dropdown">Pizza</a></p>
+            <ul id="default-pizza-details"></ul>
+            <ul id="sides-details"></ul>
         </div>
     </div>
 
