@@ -1,3 +1,5 @@
+alert("halima is precious");
+
 //Business Logic
 function Address(streetAddress, city, state) {
     this.streetAddress = streetAddress;
