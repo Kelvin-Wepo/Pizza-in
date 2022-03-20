@@ -29,3 +29,10 @@ $(document).ready(function(event) {
     $("#sides-dropdown").click(function() {
         $("#sides-details").toggle();
     });
+    ///Checkout Btn
+    $("#checkout-btn").click(function() {
+        location.reload();
+    });
+});
+
+
