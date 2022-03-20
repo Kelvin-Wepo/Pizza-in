@@ -1,12 +1,13 @@
-alert("halima is precious");
-
 //Business Logic
 function Address(streetAddress, city, state) {
     this.streetAddress = streetAddress;
     this.city = city;
     this.state = state;
     this.deliveryAddress = (streetAddress + "  " + city + ", " + state);
-}//User Interface Logic
+}
+
+
+//User Interface Logic
 $(document).ready(function(event) {
     $("#pickup-btn").click(function() {
         $("#order-content").show();
@@ -36,5 +37,4 @@ $(document).ready(function(event) {
         location.reload();
     });
 });
-
 
