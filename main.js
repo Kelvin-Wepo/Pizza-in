@@ -91,6 +91,6 @@ function Getpizza(size, crust, topping, number) {
   function deliver() {
     var names = $("#names").val();
     var place1 = $("#place1").val();
-    alert(` Thank you ${names} for visiting Buttercrust Pizzeria.  Your order is en-route to ${place1} at a delivery fee of 150`) 
+    alert(` Thank you ${names} for visiting Bu.  Your order is en-route to ${place1} at a delivery fee of 150`) 
   
   }
