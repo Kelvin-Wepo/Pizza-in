@@ -1,40 +1,96 @@
-//Business Logic
-function Address(streetAddress, city, state) {
-    this.streetAddress = streetAddress;
-    this.city = city;
-    this.state = state;
-    this.deliveryAddress = (streetAddress + "  " + city + ", " + state);
-}
-
-
-//User Interface Logic
-$(document).ready(function(event) {
-    $("#pickup-btn").click(function() {
-        $("#order-content").show();
-        $("#landing-content").hide();
-        $("#delivery-option").text("PICKUP BY CUSTOMER");
+function Getpizza(size, crust, topping, number) {
+    this.size = size;
+    this.crust = crust;
+    this.topping = topping;
+    this.number = number;
+  }
+  
+  function Checkamount(size_price, crust_price, topping_price, number) {
+    this.size_price = size_price;
+    this.crust_price = crust_price;
+    this.topping_price = topping_price;
+    this.number = number;
+  }
+  
+  Checkamount.prototype.totalamount = function () {
+    return (this.size_price + this.crust_price + this.topping_price) * this.number
+  
+  }
+  
+  var sizePrice = [500, 750, 1000]
+  var sizeName = ["small", "medium", "large"]
+  var crustPrice = [150, 250, 300]
+  var crustName = ["thin", "medium", "thick"]
+  var toppingName = ["pepperoni", "beef", "sausage", "chicken", "bacon"]
+  var toppingPrice = [70, 70, 60, 60, 60]
+  
+  $(document).ready(function () {
+    $("#pizzaMenu").submit(function (event) {
+      event.preventDefault();
+      babTable()
+      sumTable()
     });
-    $("#delivery-btn").click(function() {
-        $("#address").show();
-        $("#pickup-btn,#delivery-btn,#landing-tagline").hide();
+  });
+  
+  function babTable() {
+    var size = parseInt($("#size").val());
+    var sizeName1 = sizeName[size - 1]
+    var crust = parseInt($("#crust").val());
+    var crustName1 = crustName[crust - 1]
+    var topping = parseInt($("#topping").val());
+    var toppingName1 = toppingName[topping - 1]
+    var number = parseInt($("#number").val());
+  
+    var size = parseInt($("#size").val());
+    var size_price = sizePrice[size - 1]
+    // alert(size_price)
+    var crust = parseInt($("#crust").val());
+    var crust_price = crustPrice[crust - 1]
+    // alert(crust_price)
+    var topping = parseInt($("#topping").val());
+    var topping_price = toppingPrice[topping - 1]
+    // alert(topping_price)
+    var number = parseInt($("#number").val())
+    // alert(number)
+  
+    var newCheckamount = new Checkamount(size_price, crust_price, topping_price, number)
+    var total = newCheckamount.totalamount()
+  
+  
+  
+  
+  
+    if ($("#myTable tbody").length == 0) {
+      $("#myTable").append("<tbody></tbody>");
+    }
+    $("#myTable tbody").append(
+      `<tr>
+      
+      <td>  ${sizeName1}</td>
+      <td>  ${crustName1}</td>
+      <td>  ${toppingName1}</td>
+      <td>  ${number}</td>
+      <td class="total"> ${total}</td>
+      <td>
+      <button type='button' onclick='rowDelete(this);' class='btn btn-default text-danger'>
+      <i class='fas fa-trash-alt'></i>
+      </button>
+      </td>
+      </tr>`);
+  
+  }
+  
+  function sumTable() {
+    var all = 0;
+    $(".total").each(function () {
+      all += parseFloat($(this).text());
     });
-    $("form#address-form").submit(function(event) {
-        event.preventDefault();
-        var streetAddress = $("input#street-add").val();
-        var city = $("input#city-add").val();
-        var state = $("input#state-select").val();
-        // var zipcode = $("input#zip-add").val();
-        var newAddress = new Address(streetAddress, city, state)
-        $("#order-content").show();
-        $("#landing-content").hide();
-        $("#delivery-option").text("DELIVER TO: " + newAddress.deliveryAddress);
-    });
-    $("#sides-dropdown").click(function() {
-        $("#sides-details").toggle();
-    });
-    ///Checkout Btn
-    $("#checkout-btn").click(function() {
-        location.reload();
-    });
-});
-
+    $('#all').text(all);
+  }
+  
+  function deliver() {
+    var names = $("#names").val();
+    var place1 = $("#place1").val();
+    alert(` Thank you ${names} for visiting Buttercrust Pizzeria.  Your order is en-route to ${place1} at a delivery fee of 150`) 
+  
+  }

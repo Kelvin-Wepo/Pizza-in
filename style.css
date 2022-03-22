@@ -1,124 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto:wght@100;300;400;500;700&display=swap');
 
 body {
-    font-family: serif;
-    color: #000000;
-    background-image: url(./images/pizza\ image6.jpg);
+    background-image: url(./images/pizza\ image\ 12.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* font-family: 'Inspiration',cursive; */
-}
-
-.navbar-inverse {
-     background-color: rgba(0, 0, 0, 0.4); 
-}
-
-#nav {
-    padding-bottom: 3px;
-}
-
-#pizz {
-    color: red;
-    font-size: 30px;
-    font-style: italic;
-    font-family: 'Inspiration',cursive;
-}
-
-.fa {
-    color: white;
-    margin-top: 15px;
-}
-
-#landing-content {
+    text-align: center;
+    background-attachment: fixed;
     color: black;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-top: 200px;
+    opacity: 0.8;
+}
+
+.description {
+    text-align: center;
+     /* background-image: url(../images/pizza.png); */
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.menu p {
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
 }
 
-#order-content {
-    display: none;
-    color: #000000;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-top: 100px;
-    margin-bottom: 100px;
+.menu h2 {
     text-align: center;
 }
 
-#price-content {
-    margin-top: 100px;
+h2 {
+    font-family: 'Orbitron', sans-serif;
 }
 
-.page-header {
-    font-size: 65pt;
-    margin-bottom: 75px;
-    padding-bottom: 35px;
-}
-#address-form {
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
+.toppings h2 {
+    text-align: center;
 }
 
-.address-spacing {
-    margin-bottom: 20px;
+.toppings p {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
 }
 
-#state-select {
-    margin-top: 0px;
+fieldset {
+    font-family: 'Orbitron', sans-serif;
 }
 
-#pickup-btn,
-#delivery-btn,
-#custom-pizza-btn,
-#submit-custom-pizza {
-    font-size: 20pt;
-    margin-top: 30px;
+.description p {
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
 }
 
-#custom-pizza-btn {
-    display: none;
+#amount::placeholder {
+    font-weight: bold;
 }
 
-#pickup-btn,
-#delivery-btn {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+.button {
+    text-align: center;
 }
 
-#order-proceed-btn {
-    font-size: 20pt;
-    margin-top: 50px;
-    margin-bottom: 100px;
+.summary {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
 }
 
-#checkout-btn {
-    font-size: 20pt;
-    margin-top: 50px;
-    margin-bottom: 40px;
+.location {
+    text-align: center;
 }
 
-#submit-custom-pizza {
-    margin-bottom: 35px;
+.location {
+    font-family: 'Orbitron', sans-serif;
 }
 
-#address,
-#pizza-details-dropdown,
-#pizza-details,
-#default-pizza-dropdown,
-#default-pizza-details,
-#sides-dropdown,
-#sides-details {
-    display: none;
+.contacts {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    color:white;
+
 }
 
-#default-pizzas {
-    display: none;
+span {
+    color: red;
 }
-
-#footer {
-    margin-top: 100px;
-    font-size: 20px;
-}
-    
